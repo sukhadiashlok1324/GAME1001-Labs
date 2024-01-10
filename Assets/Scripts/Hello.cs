@@ -8,7 +8,7 @@ public class Hello : MonoBehaviour
     void Start()
     {
         Debug.Log("Hello World!");
-        GetComponent<SpriteRenderer>().color = Color.green;
+        GetComponent<SpriteRenderer>().color = Color.red;
     }
 
     // Update is called once per frame
