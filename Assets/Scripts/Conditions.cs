@@ -45,6 +45,8 @@ public class Conditions : MonoBehaviour
         {
             GetComponent<SpriteRenderer>().color = Color.green;
         }
-        transform.position = new Vector3(x, y, 0.0f);
+
+        // Uncomment to change position based on X & Y slider values
+        //transform.position = new Vector3(x, y, 0.0f);
     }
 }
