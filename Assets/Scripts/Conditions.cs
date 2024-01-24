@@ -31,9 +31,12 @@ public class Conditions : MonoBehaviour
         }
     }
 
+    [SerializeField] float x = 0.0f;
+    [SerializeField] float y = 0.0f;
+
     // Update is called once per frame
     void Update()
     {
-        
+        transform.position = new Vector3(x, y, 0.0f);
     }
 }
