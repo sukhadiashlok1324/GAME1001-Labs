@@ -37,6 +37,14 @@ public class Conditions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (transform.position.x < 0.0f)
+        {
+            GetComponent<SpriteRenderer>().color = Color.red;
+        }
+        if (transform.position.x > 0.0f)
+        {
+            GetComponent<SpriteRenderer>().color = Color.green;
+        }
         transform.position = new Vector3(x, y, 0.0f);
     }
 }
