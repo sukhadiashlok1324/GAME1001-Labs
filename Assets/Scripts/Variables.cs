@@ -35,10 +35,13 @@ public class Variables : MonoBehaviour
     // The value in the inspector will override whatever value we have here
     // (So x will be -5 instead of 10000000)
     [SerializeField] float x = 10000000.0f;
+    // Challenge:
+    // Make a variable called y that changes the y-coordinate of the transform.
+    [SerializeField] float y = 0.0f;
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(x, 0.0f, 0.0f);
+        transform.position = new Vector3(x, y, 0.0f);
     }
 }
